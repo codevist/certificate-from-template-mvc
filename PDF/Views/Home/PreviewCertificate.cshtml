@@ -1,0 +1,47 @@
+﻿@using PDF.Models
+@model List<CertificateSet>
+@{
+    ViewBag.Title = "PreviewCertificate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>PreviewCertificate</h2>
+<table class="display nowrap" width="100%" id="grid">
+    <thead>
+        <tr>
+            <th>
+                Topic
+            </th>
+            <th>
+                Date
+            </th>
+            <th>
+                Name Surname
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <div style="margin-right:15px;">
+                        @item.Topic
+                    </div>
+                </td>
+                <td>
+                    <div style="padding-right:15px;">
+                        @item.Date.Date.ToString("dd/MM/yy")
+                    </div>
+                </td>
+                <td>
+                    @item.NameSurname
+                </td>
+                <td>
+                    <a href="@Url.Action("ShowCertificate","Home", new { id = item.Id } )">Show Certificate</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
