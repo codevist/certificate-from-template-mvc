@@ -215,6 +215,10 @@
     <Compile Include="Migrations\201807131225195_asdada.Designer.cs">
       <DependentUpon>201807131225195_asdada.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807132203260_seeds.cs" />
+    <Compile Include="Migrations\201807132203260_seeds.Designer.cs">
+      <DependentUpon>201807132203260_seeds.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Bolums.cs" />
     <Compile Include="Models\CertificateModelDTO.cs" />
@@ -306,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807131225195_asdada.resx">
       <DependentUpon>201807131225195_asdada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807132203260_seeds.resx">
+      <DependentUpon>201807132203260_seeds.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
